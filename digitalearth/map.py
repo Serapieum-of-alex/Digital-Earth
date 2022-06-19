@@ -105,7 +105,8 @@ class Map:
                                  "value")
             else:
                 nodataval = kwargs["nodataval"]
-        # arr = arr.astype(np.float32)
+        # convert the array to float as integer array gives error when compared to float
+        arr = arr.astype(np.float32)
         arr[np.isclose(arr, nodataval, rtol=0.001)] = np.nan
 
         if "points" in kwargs.keys():
