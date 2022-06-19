@@ -48,7 +48,7 @@ class Map:
             pid_size: Union[int, float] = 10,
             **kwargs
     ):
-        """PlotArray.
+        """plot.
 
             plot an array/ gdal dataset
 
@@ -96,9 +96,16 @@ class Map:
         fig: [matplotlib figure object]
             the figure object
         """
-
-        arr, nodataval = Raster.getRasterData(src)
-        arr = arr.astype(np.float32)
+        if isinstance(src, Dataset):
+            arr, nodataval = Raster.getRasterData(src)
+        else:
+            arr = src
+            if "nodataval" not in kwargs.keys():
+                raise ValueError("If the first parameter is a numpy.ndarray object you have to enter a kwargs 'nodataval'"
+                                 "value")
+            else:
+                nodataval = kwargs["nodataval"]
+        # arr = arr.astype(np.float32)
         arr[np.isclose(arr, nodataval, rtol=0.001)] = np.nan
 
         if "points" in kwargs.keys():
