@@ -2,8 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/MAfarrag/digitalearth.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/MAfarrag/digitalearth/context:python)
-[![Documentation Status](https://readthedocs.org/projects/digitalearth/badge/?version=latest)](https://cleopatra.
-readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/digitalearth/badge/?version=latest)](https://cleopatra.readthedocs.io/en/latest/?badge=latest)
 
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/MAfarrag/digitalearth)
@@ -59,7 +58,7 @@ pip install git+https://github.com/MAfarrag/digitalearth
 ## pip
 to install the last release you can easly use pip
 ```
-pip install digitalearth==0.1.0
+pip install digitalearth==0.1.1
 ```
 
 Quick start

@@ -13,12 +13,12 @@ test_requirements = ['pytest>=3', ]
 
 setup(
     name="digitalearth",
-    version="0.1.0",
-    description="visualization package",
+    version="0.1.1",
+    description="Geo-spatial Visualization package",
     author="Mostafa Farrag",
     author_email="moah.farag@gmail.come",
     url="https://github.com/MAfarrag/digitalearth",
-    keywords=["matplotlib", "maps", "visualization"],
+    keywords=["matplotlib", "maps", "visualization", "gdal", "rasaterio"],
     long_description=readme + '\n\n' + history,
     long_description_content_type="text/markdown",
     license="GNU General Public License v3",
