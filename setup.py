@@ -13,7 +13,7 @@ test_requirements = ['pytest>=3', ]
 
 setup(
     name="digitalearth",
-    version="0.1.2",
+    version="0.1.3",
     description="Geo-spatial Visualization package",
     author="Mostafa Farrag",
     author_email="moah.farag@gmail.come",

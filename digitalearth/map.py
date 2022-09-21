@@ -107,7 +107,9 @@ class Map:
                 nodataval = kwargs["nodataval"]
         # convert the array to float as integer array gives error when compared to float
         arr = arr.astype(np.float32)
-        arr[np.isclose(arr, nodataval, rtol=0.001)] = np.nan
+
+        if nodataval is not None:
+            arr[np.isclose(arr, nodataval, rtol=0.001)] = np.nan
 
         if "points" in kwargs.keys():
             points = kwargs["points"]
@@ -118,7 +120,7 @@ class Map:
                 src, points[["x", "y"]][:]
             ).values
 
-        fig, ax = Array.plot(arr,nodataval, **kwargs)
+        fig, ax = Array.plot(arr, nodataval, **kwargs)
 
         PoitsID = list()
         if "points" in kwargs.keys():
