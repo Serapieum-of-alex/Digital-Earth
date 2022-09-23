@@ -6,14 +6,13 @@ with open("README.md", "r") as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-# requirements = [line.strip() for line in open("requirements.txt").readlines()]
-# requirements = requirements[1:]
+requirements = [line.strip() for line in open("requirements.txt").readlines()]
 
 test_requirements = ['pytest>=3', ]
 
 setup(
     name="digitalearth",
-    version="0.1.3",
+    version="0.1.4",
     description="Geo-spatial Visualization package",
     author="Mostafa Farrag",
     author_email="moah.farag@gmail.come",
@@ -26,12 +25,7 @@ setup(
     packages=find_packages(include=['digitalearth', 'digitalearth.*']),
     test_suite="tests",
     tests_require=test_requirements,
-    # install_requires=requirements,
-    # entry_points={
-    #     'console_scripts': [
-    #         'earth2observe=earth2observe.cli:main',
-    #     ],
-    # },
+    install_requires=requirements,
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",

@@ -1,12 +1,13 @@
 channels:
   - conda-forge
 dependencies:
-  - python >=3.9,<3.10
+  - python >=3.9,<3.12
   - pip >=22.2.2
-  - numpy >=1.21.2,<1.23.3
+  - numpy >=1.23.3
+  - gdal >=3.4.3
   - matplotlib >=3.5.3,<3.6.0
-  - pyramids >=0.2.2
+  - pyramids >=0.2.4
   - pip:
-      - cleopatra >=0.2.1
+      - cleopatra >=0.2.2
       - loguru >=0.6.0
-      - geoplot >=0.5.1
+#      - geoplot >=0.5.1

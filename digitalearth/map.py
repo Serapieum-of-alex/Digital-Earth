@@ -1,12 +1,12 @@
 from typing import Any, List, Tuple, Union
 
-import geoplot as gplt
-import geoplot.crs as gcrs
-import matplotlib.pyplot as plt
+# import geoplot as gplt
+# import geoplot.crs as gcrs
+# import matplotlib.pyplot as plt
 import numpy as np
 from cleopatra.array import Array
-from geopandas import GeoDataFrame
-from loguru import logger
+# from geopandas import GeoDataFrame
+# from loguru import logger
 from osgeo.gdal import Dataset
 from pyramids.catchment import Catchment as GC
 from pyramids.raster import Raster
@@ -145,93 +145,93 @@ class Map:
         return fig, ax
 
 
-    @staticmethod
-    def plotCatchment(
-            points: GeoDataFrame,
-            column_name: Any,
-            poly: GeoDataFrame,
-            line: GeoDataFrame,
-            scheme: Any = None,
-            scale_func: Any = '',
-            cmap: str = "viridis",
-            legend_values: List = [],
-            legend_labels: List = [],
-            figsize: Tuple = (8, 8),
-            title: Any = 'title',
-            title_size: int = 500,
-            save: Union[bool, str] = False,
-    ):
-        """PlotCatchment.
-
-        Inputs:
-        ------
-        points:[GeoDataFrame]
-            geodataframe contains values to plot in one of its columns.
-        column_name: [str]
-            name of the column you want to plot its values.
-        poly: [GeoDataFrame]
-            geodataframe contains polygon geometries.
-        line: [GeoDataFrame]
-            geodataframe contains linestring geometries.
-        figsize: [Tuple]
-            fize oif the figure.
-        title:[str]
-            title of the figure.
-        save: [bool/str]
-            if you want to save the plot provide the path with the extention,
-            Default is False.
-        """
-        # unify the projection
-        if not poly.crs.is_geographic:
-            logger.debug("The coordinate system of the poly geodataframe is not geographic"
-                         "SO, it will be reprojected to WGS-84")
-            poly.to_crs(4326, inplace=True)
-
-        epsg = poly.crs.to_json()
-        line.to_crs(epsg, inplace=True)
-        points.to_crs(epsg, inplace=True)
-
-        pointplot_kwargs = {'edgecolor': 'white', 'linewidth': 0.9}  # 'color': "crimson"
-
-        # make sure that the plotted column is numeric
-        points[column_name] = points[column_name].map(float)
-
-        fig, ax = plt.subplots(1, 1, figsize=figsize, subplot_kw={'projection': gcrs.AlbersEqualArea()})
-        if scheme:
-
-            gplt.pointplot(points, projection=gcrs.AlbersEqualArea(),
-                           hue=column_name, cmap=cmap,
-                           scale=column_name, limits=(4, 20),
-                           scheme=scheme,
-                           # scale_func = scale_func,
-                           legend=True,
-                           legend_var='scale',
-                           legend_kwargs={  # 'loc': 'upper right',
-                               'bbox_to_anchor': (1, 0.35)},
-                           ax=ax, **pointplot_kwargs  # ,
-                           )
-        else:
-            gplt.pointplot(points, projection=gcrs.AlbersEqualArea(),
-                           hue=column_name, cmap=cmap,
-                           scale=column_name, limits=(4, 20),
-                           scale_func=scale_func,
-                           legend=True,
-                           legend_var='scale',
-                           legend_values=legend_values,
-                           legend_labels=legend_labels,
-                           legend_kwargs={  # 'loc': 'upper right',
-                               'bbox_to_anchor': (1, 0.35)},
-                           ax=ax, **pointplot_kwargs  # ,
-                           )
-
-        gplt.polyplot(poly, ax=ax, edgecolor='grey', facecolor='grey',  # 'lightgray',
-                      linewidth=0.5, extent=poly.total_bounds)  # # , zorder=0
-
-        gplt.polyplot(line, ax=ax, linewidth=10)
-
-        plt.title(title, fontsize=title_size)
-        # plt.subplots_adjust(top=0.99999, right=0.9999, left=0.000005, bottom=0.000005)
-        if save:
-            plt.savefig(save, bbox_inches='tight', transparent=True)
-
-        return fig, ax
+    # @staticmethod
+    # def plotCatchment(
+    #         points: GeoDataFrame,
+    #         column_name: Any,
+    #         poly: GeoDataFrame,
+    #         line: GeoDataFrame,
+    #         scheme: Any = None,
+    #         scale_func: Any = '',
+    #         cmap: str = "viridis",
+    #         legend_values: List = [],
+    #         legend_labels: List = [],
+    #         figsize: Tuple = (8, 8),
+    #         title: Any = 'title',
+    #         title_size: int = 500,
+    #         save: Union[bool, str] = False,
+    # ):
+    #     """PlotCatchment.
+    #
+    #     Inputs:
+    #     ------
+    #     points:[GeoDataFrame]
+    #         geodataframe contains values to plot in one of its columns.
+    #     column_name: [str]
+    #         name of the column you want to plot its values.
+    #     poly: [GeoDataFrame]
+    #         geodataframe contains polygon geometries.
+    #     line: [GeoDataFrame]
+    #         geodataframe contains linestring geometries.
+    #     figsize: [Tuple]
+    #         fize oif the figure.
+    #     title:[str]
+    #         title of the figure.
+    #     save: [bool/str]
+    #         if you want to save the plot provide the path with the extention,
+    #         Default is False.
+    #     """
+    #     # unify the projection
+    #     if not poly.crs.is_geographic:
+    #         logger.debug("The coordinate system of the poly geodataframe is not geographic"
+    #                      "SO, it will be reprojected to WGS-84")
+    #         poly.to_crs(4326, inplace=True)
+    #
+    #     epsg = poly.crs.to_json()
+    #     line.to_crs(epsg, inplace=True)
+    #     points.to_crs(epsg, inplace=True)
+    #
+    #     pointplot_kwargs = {'edgecolor': 'white', 'linewidth': 0.9}  # 'color': "crimson"
+    #
+    #     # make sure that the plotted column is numeric
+    #     points[column_name] = points[column_name].map(float)
+    #
+    #     fig, ax = plt.subplots(1, 1, figsize=figsize, subplot_kw={'projection': gcrs.AlbersEqualArea()})
+    #     if scheme:
+    #
+    #         gplt.pointplot(points, projection=gcrs.AlbersEqualArea(),
+    #                        hue=column_name, cmap=cmap,
+    #                        scale=column_name, limits=(4, 20),
+    #                        scheme=scheme,
+    #                        # scale_func = scale_func,
+    #                        legend=True,
+    #                        legend_var='scale',
+    #                        legend_kwargs={  # 'loc': 'upper right',
+    #                            'bbox_to_anchor': (1, 0.35)},
+    #                        ax=ax, **pointplot_kwargs  # ,
+    #                        )
+    #     else:
+    #         gplt.pointplot(points, projection=gcrs.AlbersEqualArea(),
+    #                        hue=column_name, cmap=cmap,
+    #                        scale=column_name, limits=(4, 20),
+    #                        scale_func=scale_func,
+    #                        legend=True,
+    #                        legend_var='scale',
+    #                        legend_values=legend_values,
+    #                        legend_labels=legend_labels,
+    #                        legend_kwargs={  # 'loc': 'upper right',
+    #                            'bbox_to_anchor': (1, 0.35)},
+    #                        ax=ax, **pointplot_kwargs  # ,
+    #                        )
+    #
+    #     gplt.polyplot(poly, ax=ax, edgecolor='grey', facecolor='grey',  # 'lightgray',
+    #                   linewidth=0.5, extent=poly.total_bounds)  # # , zorder=0
+    #
+    #     gplt.polyplot(line, ax=ax, linewidth=10)
+    #
+    #     plt.title(title, fontsize=title_size)
+    #     # plt.subplots_adjust(top=0.99999, right=0.9999, left=0.000005, bottom=0.000005)
+    #     if save:
+    #         plt.savefig(save, bbox_inches='tight', transparent=True)
+    #
+    #     return fig, ax
