@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "digitalearth"
-version = "0.1.4"
+version = "0.1.5"
 description = "Geo-spatial Visualization package"
 authors = ["Mostafa Farrag <moah.farag@gmail.com>"]
 license = "GNU General Public License v3"
