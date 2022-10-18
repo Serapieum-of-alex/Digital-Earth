@@ -30,15 +30,16 @@ packages = [
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
 numpy = "^1.23.3"
-matplotlib = "^3.5.3"
 loguru = "^0.6.0"
-#gdal = "3.4.3"
-gdal = {url = "https://download.lfd.uci.edu/pythonlibs/archived/GDAL-3.4.3-cp39-cp39-win_amd64.whl" }
-fiona = {url = "https://download.lfd.uci.edu/pythonlibs/archived/Fiona-1.8.21-cp39-cp39-win_amd64.whl"}
-#cartopy = {url = "https://download.lfd.uci.edu/pythonlibs/archived/Cartopy-0.20.2-cp39-cp39-win_amd64.whl"}
-#geoplot = "0.5.1"
 cleopatra = "^0.2.3"
 pyramids-gis = "^0.2.6"
+
+#matplotlib = "^3.5.3"
+#gdal = "3.4.3"
+#gdal = {url = "https://download.lfd.uci.edu/pythonlibs/archived/GDAL-3.4.3-cp39-cp39-win_amd64.whl" }
+#fiona = {url = "https://download.lfd.uci.edu/pythonlibs/archived/Fiona-1.8.21-cp39-cp39-win_amd64.whl"}
+#cartopy = {url = "https://download.lfd.uci.edu/pythonlibs/archived/Cartopy-0.20.2-cp39-cp39-win_amd64.whl"}
+#geoplot = "0.5.1"
 
 
 [tool.poetry.dev-dependencies]
