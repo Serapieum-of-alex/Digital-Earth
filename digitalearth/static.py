@@ -1,13 +1,13 @@
 from typing import Any, List, Tuple, Union
 
+import matplotlib.pyplot as plt
 import numpy as np
 from cleopatra.array import Array
+from geopandas import GeoDataFrame
+from loguru import logger
 from osgeo.gdal import Dataset
 from pyramids.catchment import Catchment as GC
 from pyramids.raster import Raster
-from geopandas import GeoDataFrame
-import matplotlib.pyplot as plt
-from loguru import logger
 
 # from Hapi.plot.visualizer import MidpointNormalize, Map
 
@@ -188,6 +188,7 @@ class Map:
         """
         import geoplot as gplt
         import geoplot.crs as gcrs
+
         # unify the projection
         if not poly.crs.is_geographic:
             logger.debug("The coordinate system of the poly geodataframe is not geographic"
