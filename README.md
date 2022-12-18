@@ -25,12 +25,12 @@ digitalearth
 
 Main Features
 -------------
-  -
+  - plot static maps
 
 
 Future work
 -------------
-  -
+  - dynamic/interactive maps
 
 
 

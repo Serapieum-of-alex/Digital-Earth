@@ -34,17 +34,19 @@ loguru = "^0.6.0"
 cleopatra = "^0.2.3"
 pyramids-gis = "^0.2.7"
 #matplotlib = "^3.5.3"
-folium = "^0.13.0"
-mapclassify = "^2.4.3"
-branca = "^0.6.0"
+#folium = "^0.13.0"
+#mapclassify = "^2.4.3"
+#branca = "^0.6.0"
+
 # for pyramids-gis
 #gdal = "3.4.3"
-gdal = {url = "https://download.lfd.uci.edu/pythonlibs/archived/GDAL-3.4.3-cp39-cp39-win_amd64.whl" }
+#gdal = {url = "https://download.lfd.uci.edu/pythonlibs/archived/GDAL-3.4.3-cp39-cp39-win_amd64.whl" }
+
 # geoplot is not imported in the top of the file but only inside the plotCatchment function
-geoplot = "^0.5.1"
-cartopy = {url = "https://download.lfd.uci.edu/pythonlibs/archived/Cartopy-0.20.2-cp39-cp39-win_amd64.whl"}
-geos = "0.2.3"
-pyproj = "3.4.0"
+#geoplot = "^0.5.1"
+#cartopy = {url = "https://download.lfd.uci.edu/pythonlibs/archived/Cartopy-0.20.2-cp39-cp39-win_amd64.whl"}
+#geos = "0.2.3"
+#pyproj = "3.4.0"
 
 
 
