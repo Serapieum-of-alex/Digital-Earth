@@ -30,7 +30,7 @@ if missing_dependencies:
     raise ImportError("Missing required dependencies {0}".format(missing_dependencies))
 
 
-import digitalearth.map
+import digitalearth.static
 
 __doc__ = """
 digitalearth - visualization package

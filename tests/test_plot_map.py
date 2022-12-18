@@ -2,7 +2,7 @@ import pandas as pd
 from matplotlib.figure import Figure
 from osgeo.gdal import Dataset
 
-from digitalearth.map import Map
+from digitalearth.static import Map
 
 
 class TestPlotArray:

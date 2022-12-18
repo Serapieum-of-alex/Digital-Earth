@@ -1,0 +1,2 @@
+def raster():
+    return None
