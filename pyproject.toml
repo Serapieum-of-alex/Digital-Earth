@@ -40,7 +40,7 @@ pyramids-gis = "^0.2.7"
 
 # for pyramids-gis
 #gdal = "3.4.3"
-gdal = {url = "https://download.lfd.uci.edu/pythonlibs/archived/GDAL-3.4.3-cp39-cp39-win_amd64.whl" }
+#gdal = {url = "https://download.lfd.uci.edu/pythonlibs/archived/GDAL-3.4.3-cp39-cp39-win_amd64.whl" }
 
 # geoplot is not imported in the top of the file but only inside the plotCatchment function
 #geoplot = "^0.5.1"
