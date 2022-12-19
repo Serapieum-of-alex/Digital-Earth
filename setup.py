@@ -13,7 +13,7 @@ requirements_dev = [line.strip() for line in open("requirements-dev.txt").readli
 
 setup(
     name="digitalearth",
-    version="0.1.0",
+    version="0.1.8",
     description="visualization package",
     author="Mostafa Farrag",
     author_email="moah.farag@gmail.come",
