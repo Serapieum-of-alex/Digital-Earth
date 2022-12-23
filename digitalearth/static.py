@@ -149,7 +149,7 @@ class Map:
             poly: GeoDataFrame,
             line: GeoDataFrame,
             scheme: Any = None,
-            scale_func: Any = '',
+            scale_func: Any = None,
             cmap: str = "viridis",
             legend_values: List = [],
             legend_labels: List = [],
@@ -191,7 +191,7 @@ class Map:
 
         # unify the projection
         if not poly.crs.is_geographic:
-            logger.debug("The coordinate system of the poly geodataframe is not geographic"
+            logger.debug("The coordinate system of the poly geodataframe is not geographic "
                          "SO, it will be reprojected to WGS-84")
             poly.to_crs(4326, inplace=True)
 
@@ -205,13 +205,13 @@ class Map:
         points[column_name] = points[column_name].map(float)
 
         fig, ax = plt.subplots(1, 1, figsize=figsize, subplot_kw={'projection': gcrs.AlbersEqualArea()})
-        if scheme:
 
+        if scheme:
             gplt.pointplot(points, projection=gcrs.AlbersEqualArea(),
                            hue=column_name, cmap=cmap,
-                           scale=column_name, limits=(4, 20),
+                           scale=column_name,
+                           limits=(4, 20),
                            scheme=scheme,
-                           # scale_func = scale_func,
                            legend=True,
                            legend_var='scale',
                            legend_kwargs={  # 'loc': 'upper right',
@@ -220,9 +220,12 @@ class Map:
                            )
         else:
             if scale_func:
-                gplt.pointplot(points, projection=gcrs.AlbersEqualArea(),
-                               hue=column_name, cmap=cmap,
-                               scale=column_name, limits=(4, 20),
+                gplt.pointplot(points,
+                               projection=gcrs.AlbersEqualArea(),
+                               hue=column_name,
+                               cmap=cmap,
+                               scale=column_name,
+                               limits=(4, 20),
                                scale_func=scale_func,
                                legend=True,
                                legend_var='scale',
@@ -234,9 +237,12 @@ class Map:
                                )
             else:
                 gplt.pointplot(
-                    points, projection=gcrs.AlbersEqualArea(),
-                    hue=column_name, cmap=cmap,
-                    scale=column_name, limits=(4, 20),
+                    points,
+                    projection=gcrs.AlbersEqualArea(),
+                    hue=column_name,
+                    cmap=cmap,
+                    scale=column_name,
+                    limits=(4, 20),
                     # scale_func=scale_func,
                     legend=True,
                     legend_var='scale',
