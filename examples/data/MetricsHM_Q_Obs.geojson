@@ -1,0 +1,1167 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::3035"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 23800100,
+                "rmse": "32",
+                "KGE": "0.378",
+                "WB": "72",
+                "NSE": "0.464",
+                "NSEModified": "0.454",
+                "MBE": -14.22,
+                "MAE": 18.352,
+                "gid": 149,
+                "name": "Plochingen",
+                "oid": 23800100,
+                "river": "NECKAR",
+                "id": 1,
+                "xsid": 16100,
+                "datum(m)": 252.36,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1973-11-01",
+                "WLend": "2012-11-30"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4278240.425957739,
+                    2843958.8637851104
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 23800500,
+                "rmse": "42",
+                "KGE": "0.6909999999999999",
+                "WB": "93",
+                "NSE": "0.696",
+                "NSEModified": "0.759",
+                "MBE": 6.055,
+                "MAE": 26.502,
+                "gid": 106,
+                "name": "Lauffen",
+                "oid": 23800500,
+                "river": "NECKAR",
+                "id": 2,
+                "xsid": 16269,
+                "datum(m)": 159.37,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1981-11-14",
+                "WLend": "2003-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4259614.333581854,
+                    2884750.5563533017
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 23800690,
+                "rmse": "70",
+                "KGE": "0.655",
+                "WB": "99",
+                "NSE": "0.733",
+                "NSEModified": "0.73",
+                "MBE": 1.338,
+                "MAE": 38.879,
+                "gid": 158,
+                "name": "Rockenau",
+                "oid": 23800690,
+                "river": "NECKAR",
+                "id": 4,
+                "xsid": 16581,
+                "datum(m)": 119.71,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1982-11-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4248756.49061485,
+                    2924872.5039582774
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 23700200,
+                "rmse": "384",
+                "KGE": "0.744",
+                "WB": "86",
+                "NSE": "0.455",
+                "NSEModified": "0.514",
+                "MBE": -176.537,
+                "MAE": 287.356,
+                "gid": 118,
+                "name": "Maxau",
+                "oid": 23700200,
+                "river": "RHEIN",
+                "id": 5,
+                "xsid": 16724,
+                "datum(m)": 97.72,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1955-01-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4197087.890991793,
+                    2882067.6186465095
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 23700600,
+                "rmse": "380",
+                "KGE": "0.752",
+                "WB": "87",
+                "NSE": "0.471",
+                "NSEModified": "0.52",
+                "MBE": -165.323,
+                "MAE": 279.982,
+                "gid": 174,
+                "name": "Speyer",
+                "oid": 23700600,
+                "river": "RHEIN",
+                "id": 5,
+                "xsid": 16801,
+                "datum(m)": 88.51,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1955-01-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4208213.160951173,
+                    2913509.251019502
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 23900200,
+                "rmse": "378",
+                "KGE": "0.803",
+                "WB": "89",
+                "NSE": "0.602",
+                "NSEModified": "0.642",
+                "MBE": -156.588,
+                "MAE": 280.42,
+                "gid": 196,
+                "name": "Worms",
+                "oid": 23900200,
+                "river": "RHEIN",
+                "id": 6,
+                "xsid": 16885,
+                "datum(m)": 84.11,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1955-01-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4203774.413333693,
+                    2947857.61873386
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 24010004,
+                "rmse": "36",
+                "KGE": "0.418",
+                "WB": "97",
+                "NSE": "0.5620000000000001",
+                "NSEModified": "0.5620000000000001",
+                "MBE": -1.254,
+                "MAE": 20.276,
+                "gid": 350,
+                "name": "Kemmern",
+                "oid": 24010004,
+                "river": "MAIN (RHEIN)",
+                "id": 7,
+                "xsid": 17120,
+                "datum(m)": 230.2,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1958-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1958-08-05",
+                "WLend": "2013-05-16"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4383683.54914114,
+                    2982382.825135803
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 24022003,
+                "rmse": "52",
+                "KGE": "0.61",
+                "WB": "92",
+                "NSE": "0.725",
+                "NSEModified": "0.771",
+                "MBE": 8.627,
+                "MAE": 35.315,
+                "gid": 409,
+                "name": "Schweinfurt",
+                "oid": 24022003,
+                "river": "MAIN (RHEIN)",
+                "id": 8,
+                "xsid": 17242,
+                "datum(m)": 201.16,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1966-11-01",
+                "WLend": "2013-05-08"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4336803.767763336,
+                    2991011.1392785534
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 24300600,
+                "rmse": "55",
+                "KGE": "0.621",
+                "WB": "94",
+                "NSE": "0.727",
+                "NSEModified": "0.762",
+                "MBE": 7.736,
+                "MAE": 36.868,
+                "gid": 198,
+                "name": "Wuerzburg",
+                "oid": 24300600,
+                "river": "MAIN (RHEIN)",
+                "id": 9,
+                "xsid": 17411,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4315586.748068333,
+                    2964701.3964205147
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 24050009,
+                "rmse": "130",
+                "KGE": "0.155",
+                "WB": "18",
+                "NSE": "-0.089",
+                "NSEModified": "0.5669999999999999",
+                "MBE": 111.607,
+                "MAE": 114.188,
+                "gid": 416,
+                "name": "Steinbach",
+                "oid": 24050009,
+                "river": "MAIN (RHEIN)",
+                "id": 10,
+                "xsid": 17514,
+                "datum(m)": 146.33,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1964-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1963-10-28",
+                "WLend": "2013-05-07"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4292649.4890531795,
+                    2988650.225261493
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 24064003,
+                "rmse": "87",
+                "KGE": "0.589",
+                "WB": "97",
+                "NSE": "0.704",
+                "NSEModified": "0.729",
+                "MBE": -5.461,
+                "MAE": 54.125,
+                "gid": 355,
+                "name": "Kleinheubach",
+                "oid": 24064003,
+                "river": "MAIN (RHEIN)",
+                "id": 11,
+                "xsid": 17672,
+                "datum(m)": 119.62,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1958-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1963-10-28",
+                "WLend": "2013-05-08"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4265220.506270543,
+                    2956392.95991589
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 24700404,
+                "rmse": "88",
+                "KGE": "0.6929999999999999",
+                "WB": "79",
+                "NSE": "0.741",
+                "NSEModified": "0.854",
+                "MBE": 40.926,
+                "MAE": 67.85,
+                "gid": 51,
+                "name": "Frankfurt",
+                "oid": 24700404,
+                "river": "MAIN (RHEIN)",
+                "id": 12,
+                "xsid": 17840,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1963-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4229073.388399877,
+                    3000078.4474496427
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 25100100,
+                "rmse": "376",
+                "KGE": "0.857",
+                "WB": "93",
+                "NSE": "0.734",
+                "NSEModified": "0.779",
+                "MBE": -117.073,
+                "MAE": 278.029,
+                "gid": 114,
+                "name": "Mainz",
+                "oid": 25100100,
+                "river": "RHEIN",
+                "id": 13,
+                "xsid": 17918,
+                "datum(m)": 76.38,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1955-01-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4197355.819225426,
+                    2989504.9397741603
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 25400600,
+                "rmse": "31",
+                "KGE": "0.25",
+                "WB": "68",
+                "NSE": "0.435",
+                "NSEModified": "0.398",
+                "MBE": -8.687,
+                "MAE": 13.801,
+                "gid": 31,
+                "name": "Boos",
+                "oid": 25400600,
+                "river": "NAHE",
+                "id": 14,
+                "xsid": 18028,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4156818.1182206525,
+                    2965589.5339357643
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 25400804,
+                "rmse": "30",
+                "KGE": "0.437",
+                "WB": "63",
+                "NSE": "0.624",
+                "NSEModified": "0.739",
+                "MBE": 10.999,
+                "MAE": 20.669,
+                "gid": 62,
+                "name": "Grolsheim",
+                "oid": 25400804,
+                "river": "NAHE",
+                "id": 14,
+                "xsid": 18082,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4170941.8404692914,
+                    2979811.571028838
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 25400407,
+                "rmse": "28",
+                "KGE": "-0.531",
+                "WB": "-52",
+                "NSE": "-0.078",
+                "NSEModified": "0.785",
+                "MBE": 24.657,
+                "MAE": 25.295,
+                "gid": 117,
+                "name": "Martinstein",
+                "oid": 25400407,
+                "river": "NAHE",
+                "id": 14,
+                "xsid": 18089,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1962-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4143659.334217778,
+                    2968653.7913462287
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 25700100,
+                "rmse": "373",
+                "KGE": "0.862",
+                "WB": "94",
+                "NSE": "0.768",
+                "NSEModified": "0.8139999999999999",
+                "MBE": -105.486,
+                "MAE": 274.35,
+                "gid": 97,
+                "name": "Kaub",
+                "oid": 25700100,
+                "river": "RHEIN",
+                "id": 15,
+                "xsid": 18137,
+                "datum(m)": 67.68,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1970-01-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4161058.056416377,
+                    2999468.641285833
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 25830056,
+                "rmse": "13",
+                "KGE": "0.491",
+                "WB": "71",
+                "NSE": "0.674",
+                "NSEModified": "0.765",
+                "MBE": 4.699,
+                "MAE": 9.269,
+                "gid": 115,
+                "name": "Marburg",
+                "oid": 25830056,
+                "river": "LAHN",
+                "id": 16,
+                "xsid": 18235,
+                "datum(m)": 173.67,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1984-01-03",
+                "WLend": "2003-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4233897.236274881,
+                    3077086.0767744062
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 25800200,
+                "rmse": "32",
+                "KGE": "0.387",
+                "WB": "89",
+                "NSE": "0.538",
+                "NSEModified": "0.507",
+                "MBE": 3.903,
+                "MAE": 17.883,
+                "gid": 108,
+                "name": "Leun",
+                "oid": 25800200,
+                "river": "LAHN",
+                "id": 16,
+                "xsid": 18358,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4204459.646866631,
+                    3049488.4874189897
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 25800600,
+                "rmse": "59",
+                "KGE": "-0.123",
+                "WB": "-7",
+                "NSE": "-0.036",
+                "NSEModified": "0.521",
+                "MBE": 49.777,
+                "MAE": 50.258,
+                "gid": 95,
+                "name": "Kalkofen",
+                "oid": 25800600,
+                "river": "LAHN",
+                "id": 17,
+                "xsid": 18521,
+                "datum(m)": 86.4,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1989-11-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4170735.6042372356,
+                    3025033.8301979685
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 26400550,
+                "rmse": "47",
+                "KGE": "0.652",
+                "WB": "81",
+                "NSE": "0.731",
+                "NSEModified": "0.804",
+                "MBE": 13.755,
+                "MAE": 31.499,
+                "gid": 52,
+                "name": "Fremersdorf",
+                "oid": 26400550,
+                "river": null,
+                "id": 20,
+                "xsid": 18690,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4077718.7088310877,
+                    2926880.3445889517
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 26900400,
+                "rmse": "199",
+                "KGE": "0.63",
+                "WB": "84",
+                "NSE": "0.753",
+                "NSEModified": "0.825",
+                "MBE": 52.71,
+                "MAE": 144.066,
+                "gid": 208,
+                "name": "Cochem",
+                "oid": 26900400,
+                "river": "MOSEL",
+                "id": 22,
+                "xsid": 19103,
+                "datum(m)": 77.03,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1963-11-01",
+                "WLend": "2011-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4118624.113218076,
+                    3007303.2538578412
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 26500100,
+                "rmse": "179",
+                "KGE": "0.597",
+                "WB": "76",
+                "NSE": "0.737",
+                "NSEModified": "0.837",
+                "MBE": 67.97,
+                "MAE": 133.992,
+                "gid": 263,
+                "name": "Trier",
+                "oid": 26500100,
+                "river": "MOSEL",
+                "id": 22,
+                "xsid": 18817,
+                "datum(m)": 121.0,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1966-11-01",
+                "WLend": "2011-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4077678.1637870576,
+                    2963371.8869968075
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 27100403,
+                "rmse": "426",
+                "KGE": "0.855",
+                "WB": "98",
+                "NSE": "0.859",
+                "NSEModified": "0.9",
+                "MBE": -40.341,
+                "MAE": 307.224,
+                "gid": 203,
+                "name": "Andernach",
+                "oid": 27100403,
+                "river": "RHEIN",
+                "id": 24,
+                "xsid": 19248,
+                "datum(m)": 51.49,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1970-01-01",
+                "WLend": "2011-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4135766.101943695,
+                    3040128.4286272596
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 27200500,
+                "rmse": "18",
+                "KGE": "0.28",
+                "WB": "78",
+                "NSE": "0.434",
+                "NSEModified": "0.389",
+                "MBE": -3.305,
+                "MAE": 8.322,
+                "gid": 26,
+                "name": "Betzdorf",
+                "oid": 27200500,
+                "river": "SIEG",
+                "id": 26,
+                "xsid": 19401,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4170376.6121088103,
+                    3078000.521718354
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2729100000000,
+                "rmse": "47",
+                "KGE": "0.375",
+                "WB": "91",
+                "NSE": "0.532",
+                "NSEModified": "0.489",
+                "MBE": -4.709,
+                "MAE": 24.837,
+                "gid": 240,
+                "name": "Menden",
+                "oid": 2729100000000,
+                "river": "SIEG",
+                "id": 27,
+                "xsid": 19587,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1964-10-27",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4120762.437335045,
+                    3080161.9951469763
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2730010,
+                "rmse": "890",
+                "KGE": "0.62",
+                "WB": "67",
+                "NSE": "0.398",
+                "NSEModified": "0.647",
+                "MBE": 712.471,
+                "MAE": 727.646,
+                "gid": 235,
+                "name": "Cologne",
+                "oid": 2730010,
+                "river": "RHEIN",
+                "id": 28,
+                "xsid": 19654,
+                "datum(m)": 35.01,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1955-01-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4107605.723860747,
+                    3096203.4952691114
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2761759000000,
+                "rmse": "11",
+                "KGE": "0.481",
+                "WB": "96",
+                "NSE": "0.627",
+                "NSEModified": "0.634",
+                "MBE": -0.555,
+                "MAE": 6.579,
+                "gid": 141,
+                "name": "Oeventrop",
+                "oid": 2761759000000,
+                "river": "RUHR",
+                "id": 30,
+                "xsid": 19872,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1967-12-24",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4190886.5609213016,
+                    3144653.05562649
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2769510000000,
+                "rmse": "51",
+                "KGE": "0.486",
+                "WB": "97",
+                "NSE": "0.653",
+                "NSEModified": "0.653",
+                "MBE": -1.85,
+                "MAE": 29.98,
+                "gid": 227,
+                "name": "Hattingen",
+                "oid": 2769510000000,
+                "river": "RUHR",
+                "id": 30,
+                "xsid": 20079,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1967-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4123485.4964563902,
+                    3147054.171040658
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2783390000000,
+                "rmse": "7",
+                "KGE": "0.672",
+                "WB": "77",
+                "NSE": "0.498",
+                "NSEModified": "0.73",
+                "MBE": 2.73,
+                "MAE": 5.106,
+                "gid": 23,
+                "name": "Bentfeld",
+                "oid": 2783390000000,
+                "river": "LIPPE",
+                "id": 33,
+                "xsid": 20270,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4226432.017491478,
+                    3182939.3962935414
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2785790000000,
+                "rmse": "12",
+                "KGE": "0.66",
+                "WB": "95",
+                "NSE": "0.642",
+                "NSEModified": "0.6899999999999999",
+                "MBE": -1.142,
+                "MAE": 8.018,
+                "gid": 99,
+                "name": "Kesseler",
+                "oid": 2785790000000,
+                "river": "LIPPE",
+                "id": 34,
+                "xsid": 20369,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4188811.949494698,
+                    3174254.497686715
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2787990000000,
+                "rmse": "18",
+                "KGE": "0.589",
+                "WB": "73",
+                "NSE": "0.635",
+                "NSEModified": "0.767",
+                "MBE": 8.016,
+                "MAE": 13.675,
+                "gid": 238,
+                "name": "Leven",
+                "oid": 2787990000000,
+                "river": "LIPPE",
+                "id": 35,
+                "xsid": 20536,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1959-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4134276.371222638,
+                    3181736.136623029
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2789770000000,
+                "rmse": "25",
+                "KGE": "0.556",
+                "WB": "92",
+                "NSE": "0.658",
+                "NSEModified": "0.6870000000000001",
+                "MBE": 3.48,
+                "MAE": 16.35,
+                "gid": 259,
+                "name": "Schermbeck",
+                "oid": 2789770000000,
+                "river": "LIPPE",
+                "id": 35,
+                "xsid": 20623,
+                "datum(m)": 0.0,
+                "discharge": 1,
+                "waterlevel": 0,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1961-11-01",
+                "Qend": "2003-12-31",
+                "WLstart": "0",
+                "WLend": "0"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4103253.726078261,
+                    3178410.9444758412
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "index": 2790010,
+                "rmse": "506",
+                "KGE": "0.842",
+                "WB": "100",
+                "NSE": "0.832",
+                "NSEModified": "0.877",
+                "MBE": -5.268,
+                "MAE": 364.881,
+                "gid": 255,
+                "name": "Rees",
+                "oid": 2790010,
+                "river": "RHEIN",
+                "id": 36,
+                "xsid": 20715,
+                "datum(m)": 8.74,
+                "discharge": 1,
+                "waterlevel": 1,
+                "source": "https://www.pegelonline.wsv.de/gast/pegelinformationen",
+                "Qstart": "1955-01-01",
+                "Qend": "2003-12-31",
+                "WLstart": "1955-01-01",
+                "WLend": "2012-12-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4072238.6968474723,
+                    3189098.3435750767
+                ]
+            }
+        }
+    ]
+}
