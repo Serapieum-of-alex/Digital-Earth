@@ -7,7 +7,12 @@ History
 
 * First release on PyPI.
 
-0.2.9 (2022-12-19)
+0.1.8 (2022-12-19)
 ------------------
 
 * Use environment.yaml and requirements.txt instead of pyproject.toml and replace poetry env byconda env
+
+0.1.9 (2022-12-19)
+------------------
+
+* lock numpy to version 1.23.5
