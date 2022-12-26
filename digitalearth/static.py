@@ -13,9 +13,8 @@ from pyramids.raster import Raster
 
 
 class Map:
-    """
-    Map
-    """
+    """Map."""
+
     figure_default_options = dict(
         ylabel="",
         xlabel="",
@@ -31,19 +30,17 @@ class Map:
         Axisfontsize=15,
     )
 
-
     def __init__(self):
         pass
 
-
     @staticmethod
     def plot(
-            src: Union[Dataset, np.ndarray],
-            point_color: str = "red",
-            point_size: Union[int, float] = 100,
-            pid_color="blue",
-            pid_size: Union[int, float] = 10,
-            **kwargs
+        src: Union[Dataset, np.ndarray],
+        point_color: str = "red",
+        point_size: Union[int, float] = 100,
+        pid_color="blue",
+        pid_size: Union[int, float] = 10,
+        **kwargs
     ):
         """plot.
 
@@ -98,8 +95,10 @@ class Map:
         else:
             arr = src
             if "nodataval" not in kwargs.keys():
-                raise ValueError("If the first parameter is a numpy.ndarray object you have to enter a kwargs 'nodataval'"
-                                 "value")
+                raise ValueError(
+                    "If the first parameter is a numpy.ndarray object you have to enter a kwargs 'nodataval'"
+                    "value"
+                )
             else:
                 nodataval = kwargs["nodataval"]
         # convert the array to float as integer array gives error when compared to float
@@ -124,7 +123,9 @@ class Map:
             row = points.loc[:, "row"].tolist()
             col = points.loc[:, "col"].tolist()
             IDs = points.loc[:, "id"].tolist()
-            Points = ax.scatter(col, row, color=point_color, s=point_size)
+            ax.scatter(col, row, color=point_color, s=point_size)
+            # TODO: Points = ax.scatter(col, row, color=point_color, s=point_size)
+            #  return the scatter plot object (Points)
 
             for i in range(len(row)):
                 points_ids.append(
@@ -141,23 +142,22 @@ class Map:
 
         return fig, ax
 
-
     @staticmethod
     def plotCatchment(
-            points: GeoDataFrame,
-            column_name: Any,
-            poly: GeoDataFrame,
-            line: GeoDataFrame,
-            scheme: Any = None,
-            scale_func: Any = None,
-            cmap: str = "viridis",
-            legend_values: List = [],
-            legend_labels: List = [],
-            figsize: Tuple = (8, 8),
-            title: Any = 'title',
-            title_size: int = 500,
-            linewidth: float = 0.5,
-            save: Union[bool, str] = False,
+        points: GeoDataFrame,
+        column_name: Any,
+        poly: GeoDataFrame,
+        line: GeoDataFrame,
+        scheme: Any = None,
+        scale_func: Any = None,
+        cmap: str = "viridis",
+        legend_values: List = [],
+        legend_labels: List = [],
+        figsize: Tuple = (8, 8),
+        title: Any = "title",
+        title_size: int = 500,
+        linewidth: float = 0.5,
+        save: Union[bool, str] = False,
     ):
         """PlotCatchment.
 
@@ -191,50 +191,63 @@ class Map:
 
         # unify the projection
         if not poly.crs.is_geographic:
-            logger.debug("The coordinate system of the poly geodataframe is not geographic "
-                         "SO, it will be reprojected to WGS-84")
+            logger.debug(
+                "The coordinate system of the poly geodataframe is not geographic "
+                "SO, it will be reprojected to WGS-84"
+            )
             poly.to_crs(4326, inplace=True)
 
         epsg = poly.crs.to_json()
         line.to_crs(epsg, inplace=True)
         points.to_crs(epsg, inplace=True)
 
-        pointplot_kwargs = {'edgecolor': 'white', 'linewidth': 0.9}  # 'color': "crimson"
+        pointplot_kwargs = {
+            "edgecolor": "white",
+            "linewidth": 0.9,
+        }  # 'color': "crimson"
 
         # make sure that the plotted column is numeric
         points[column_name] = points[column_name].map(float)
 
-        fig, ax = plt.subplots(1, 1, figsize=figsize, subplot_kw={'projection': gcrs.AlbersEqualArea()})
+        fig, ax = plt.subplots(
+            1, 1, figsize=figsize, subplot_kw={"projection": gcrs.AlbersEqualArea()}
+        )
 
         if scheme:
-            gplt.pointplot(points, projection=gcrs.AlbersEqualArea(),
-                           hue=column_name, cmap=cmap,
-                           scale=column_name,
-                           limits=(4, 20),
-                           scheme=scheme,
-                           legend=True,
-                           legend_var='scale',
-                           legend_kwargs={  # 'loc': 'upper right',
-                               'bbox_to_anchor': (1, 0.35)},
-                           ax=ax, **pointplot_kwargs  # ,
-                           )
+            gplt.pointplot(
+                points,
+                projection=gcrs.AlbersEqualArea(),
+                hue=column_name,
+                cmap=cmap,
+                scale=column_name,
+                limits=(4, 20),
+                scheme=scheme,
+                legend=True,
+                legend_var="scale",
+                legend_kwargs={"bbox_to_anchor": (1, 0.35)},  # 'loc': 'upper right',
+                ax=ax,
+                **pointplot_kwargs  # ,
+            )
         else:
             if scale_func:
-                gplt.pointplot(points,
-                               projection=gcrs.AlbersEqualArea(),
-                               hue=column_name,
-                               cmap=cmap,
-                               scale=column_name,
-                               limits=(4, 20),
-                               scale_func=scale_func,
-                               legend=True,
-                               legend_var='scale',
-                               legend_values=legend_values,
-                               legend_labels=legend_labels,
-                               legend_kwargs={  # 'loc': 'upper right',
-                                   'bbox_to_anchor': (1, 0.35)},
-                               ax=ax, **pointplot_kwargs  # ,
-                               )
+                gplt.pointplot(
+                    points,
+                    projection=gcrs.AlbersEqualArea(),
+                    hue=column_name,
+                    cmap=cmap,
+                    scale=column_name,
+                    limits=(4, 20),
+                    scale_func=scale_func,
+                    legend=True,
+                    legend_var="scale",
+                    legend_values=legend_values,
+                    legend_labels=legend_labels,
+                    legend_kwargs={  # 'loc': 'upper right',
+                        "bbox_to_anchor": (1, 0.35)
+                    },
+                    ax=ax,
+                    **pointplot_kwargs  # ,
+                )
             else:
                 gplt.pointplot(
                     points,
@@ -245,22 +258,30 @@ class Map:
                     limits=(4, 20),
                     # scale_func=scale_func,
                     legend=True,
-                    legend_var='scale',
+                    legend_var="scale",
                     legend_values=legend_values,
                     legend_labels=legend_labels,
                     legend_kwargs={  # 'loc': 'upper right',
-                       'bbox_to_anchor': (1, 0.35)},
-                    ax=ax, **pointplot_kwargs  # ,
-                   )
+                        "bbox_to_anchor": (1, 0.35)
+                    },
+                    ax=ax,
+                    **pointplot_kwargs  # ,
+                )
 
-        gplt.polyplot(poly, ax=ax, edgecolor='grey', facecolor='grey',  # 'lightgray',
-                      linewidth=0.5, extent=poly.total_bounds)  # # , zorder=0
+        gplt.polyplot(
+            poly,
+            ax=ax,
+            edgecolor="grey",
+            facecolor="grey",  # 'lightgray',
+            linewidth=0.5,
+            extent=poly.total_bounds,
+        )  # # , zorder=0
 
         gplt.polyplot(line, ax=ax, linewidth=10)
 
         plt.title(title, fontsize=title_size)
         # plt.subplots_adjust(top=0.99999, right=0.9999, left=0.000005, bottom=0.000005)
         if save:
-            plt.savefig(save, bbox_inches='tight', transparent=True)
+            plt.savefig(save, bbox_inches="tight", transparent=True)
 
         return fig, ax
