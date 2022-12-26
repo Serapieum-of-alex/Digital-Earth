@@ -58,7 +58,7 @@ pip install git+https://github.com/MAfarrag/digitalearth
 ## pip
 to install the last release you can easly use pip
 ```
-pip install digitalearth==0.1.6
+pip install digitalearth==0.1.9
 ```
 
 Quick start

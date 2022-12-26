@@ -9,16 +9,14 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-# General information about the project.
-project = u"digitalearth"
-author = "Mostafa Farrag"
-
-# copyright = u"2013-2019, "
-
-
 import os
 import sys
 
+# General information about the project.
+project = "digitalearth"
+author = "Mostafa Farrag"
+
+# copyright = u"2013-2019, "
 # import sphinx_rtd_theme
 
 html_theme = "sphinxdoc"
@@ -207,7 +205,13 @@ htmlhelp_basename = "pyramidsdoc"
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ("index", "digitalearth.tex", u"digitalearth Documentation", u"Mostafa Farrag", "report")
+    (
+        "index",
+        "digitalearth.tex",
+        "digitalearth Documentation",
+        "Mostafa Farrag",
+        "report",
+    )
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -250,8 +254,8 @@ texinfo_documents = [
     (
         "index",
         "digitalearth",
-        u"digitalearth Documentation",
-        u"Mostafa Farrag",
+        "digitalearth Documentation",
+        "Mostafa Farrag",
         "digitalearth",
         "One line description of project.",
         "Miscellaneous",
