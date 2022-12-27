@@ -16,3 +16,9 @@ History
 ------------------
 
 * lock numpy to version 1.23.5
+
+0.1.10 (2022-12-27)
+------------------
+
+* fix pypi package names in the requirements.txt
+* fix python version number
