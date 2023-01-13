@@ -5,6 +5,7 @@
 [![Documentation Status](https://readthedocs.org/projects/digitalearth/badge/?version=latest)](https://cleopatra.readthedocs.io/en/latest/?badge=latest)
 
 
+[![codecov](https://codecov.io/gh/Serapieum-of-alex/Digital-Earth/branch/main/graph/badge.svg?token=nDBDBjsyij)](https://codecov.io/gh/Serapieum-of-alex/Digital-Earth)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MAfarrag/digitalearth)
 ![GitHub forks](https://img.shields.io/github/forks/MAfarrag/digitalearth?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/MAfarrag/digitalearth?style=social)
@@ -58,7 +59,7 @@ pip install git+https://github.com/MAfarrag/digitalearth
 ## pip
 to install the last release you can easly use pip
 ```
-pip install digitalearth==0.1.10
+pip install digitalearth==0.1.11
 ```
 
 Quick start
