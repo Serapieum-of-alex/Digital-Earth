@@ -1,4 +1,4 @@
-cleopatra >=0.2.4
+cleopatra >=0.2.5
 gdal >=3.5.3
 geopandas >=0.12.2
 geoplot >=0.5.1

@@ -7,7 +7,7 @@ dependencies:
   - gdal >=3.5.3
   - geopandas >=0.12.2
   - geoplot >=0.5.1
-  - cleopatra >=0.2.4
+  - cleopatra >=0.2.5
   - pyramids ==0.2.11
   - loguru >=0.6.0
   - pytest >=7.2.0
