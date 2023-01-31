@@ -22,3 +22,10 @@ History
 
 * fix pypi package names in the requirements.txt
 * fix python version number
+
+0.1.11 (2023-01-31)
+------------------
+
+* bump up cleopatra version
+* bump up pyramids version
+* add github action for creating a release from tags
