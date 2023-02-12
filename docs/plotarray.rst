@@ -41,7 +41,7 @@ Default Plot
     (<Figure size 576x576 with 2 Axes>,
      <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/default-plot.png
+.. image:: images/default-plot.png
     :width: 400pt
 
 However as you see in the plot you might need to adjust the color to different color scheme or the
@@ -72,7 +72,7 @@ first for the size of the figure you have to pass a tuple with the width and hei
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Flow Accumulation map'}>)
 
-.. image:: /img/visualization/basic_feature.png
+.. image:: images/basic_feature.png
     :width: 400pt
 
 Color Bar
@@ -108,7 +108,7 @@ Color Bar
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/color_bar.png
+.. image:: images/color_bar.png
     :width: 400pt
 
 Color Schame
@@ -144,7 +144,7 @@ Color Schame
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/color_scheme.png
+.. image:: images/color_scheme.png
     :width: 400pt
 
 Power Scale
@@ -170,11 +170,11 @@ Power Scale
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/power_scale5.png
+.. image:: images/power_scale5.png
     :width: 400pt
-.. image:: /img/visualization/power_scale4.png
+.. image:: images/power_scale4.png
     :width: 400pt
-.. image:: /img/visualization/power_scale2.png
+.. image:: images/power_scale2.png
     :width: 400pt
 
 SymLogNorm scale
@@ -193,7 +193,7 @@ SymLogNorm scale
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/symlognorm.png
+.. image:: images/symlognorm.png
     :width: 400pt
 
 
@@ -210,7 +210,7 @@ PowerNorm scale
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/powernorm.png
+.. image:: images/powernorm.png
     :width: 400pt
 
 Color scale 5
@@ -228,7 +228,7 @@ Color scale 5
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/midpoint.png
+.. image:: images/midpoint.png
     :width: 400pt
 
 Cell value label
@@ -258,7 +258,7 @@ Cell value label
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/cellvalue.png
+.. image:: images/cellvalue.png
     :width: 400pt
 
 Plot Points
@@ -295,5 +295,5 @@ in the same coordinate system as the raster
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/plotpoints.png
+.. image:: images/plotpoints.png
     :width: 400pt
