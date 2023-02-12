@@ -75,6 +75,5 @@ Main Features
    :hidden:
    :maxdepth: 1
 
-   Installation <00Installation.rst>
-   Tutorial <03tutorial.rst>
-   GIS <05GIS.rst>
+   Installation <installation.rst>
+   Plot Array <plotarray.rst>
