@@ -12,12 +12,13 @@
 import os
 import sys
 
+# import sphinx_rtd_theme
+
 # General information about the project.
 project = "digitalearth"
 author = "Mostafa Farrag"
 
 # copyright = u"2013-2019, "
-# import sphinx_rtd_theme
 
 html_theme = "sphinxdoc"
 # html_theme = "agogo"
@@ -47,13 +48,17 @@ sys.path.append(os.path.abspath("sphinxext"))
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
-    "matplotlib.sphinxext.plot_directive",
-    "sphinx.ext.todo",
-    "sphinx.ext.mathjax",
     "sphinx.ext.autodoc",
-    "sphinx.ext.graphviz",
-    "sphinx.ext.doctest",
-    "sphinx.ext.autosectionlabel",
+    "sphinx.ext.coverage",
+    "sphinx.ext.viewcode",
+    # "matplotlib.sphinxext.plot_directive",
+    # "sphinx.ext.todo",
+    # "sphinx.ext.mathjax",
+    # "sphinx.ext.graphviz",
+    # "sphinx.ext.doctest",
+    # "sphinx.ext.autosectionlabel",
+    "numpydoc",
+    "nbsphinx",
 ]
 
 autosectionlabel_prefix_document = True
@@ -116,7 +121,9 @@ pygments_style = "sphinx"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = "sphinx_rtd_theme"
+# html_theme = "sphinx_rtd_theme"
+html_theme = "pydata_sphinx_theme"
+
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -163,7 +170,13 @@ html_static_path = ["static"]
 # html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-# html_sidebars = {}
+html_sidebars = {
+    "**": [
+        "globaltoc.html",
+        "relations.html",  # needs 'show_related': True theme option to display
+        "searchbox.html",
+    ]
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
@@ -196,12 +209,10 @@ html_show_sourcelink = True
 html_file_suffix = ".html"
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "pyramidsdoc"
+htmlhelp_basename = "digitalearthdoc"
 
 
 # -- Options for LaTeX output --------------------------------------------------
-
-
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
@@ -256,7 +267,6 @@ texinfo_documents = [
         "digitalearth",
         "digitalearth Documentation",
         "Mostafa Farrag",
-        "digitalearth",
         "One line description of project.",
         "Miscellaneous",
     )

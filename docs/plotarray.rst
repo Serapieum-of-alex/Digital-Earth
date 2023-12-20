@@ -1,10 +1,11 @@
-******************************
+*****************
 Plot raster/array
-******************************
+*****************
 
 Library
 -------
-- inport the libraries
+- import the libraries
+
 .. code-block:: py
     :linenos:
 
@@ -14,7 +15,8 @@ Library
 
 Paths
 -----
-- define paths to the raster file
+- define paths to the raster file.
+
 .. code-block:: py
     :linenos:
 
@@ -22,7 +24,7 @@ Paths
 
 Read the raster
 ---------------
--To plot the array you need to read the raster using gdal
+-To plot the array you need to read the raster using gdal.
 
 .. code-block:: py
     :linenos:
@@ -31,7 +33,7 @@ Read the raster
 
 Default Plot
 ------------
-- then using all the default parameters in the PlotArray method you can directly plot the gdal.Dataset
+- Then using all the default parameters in the PlotArray method you can directly plot the gdal.Dataset.
 
 .. code-block:: py
     :linenos:
@@ -41,16 +43,16 @@ Default Plot
     (<Figure size 576x576 with 2 Axes>,
      <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/default-plot.png
+.. image:: images/default-plot.png
     :width: 400pt
 
-However as you see in the plot you might need to adjust the color to different color scheme or the
-display of the colorbar, colored label. you might don't need to display the labels showing the values
-of each cell, and for all of these decisions there are a lot of customizable parameters
+- However as you see in the plot you might need to adjust the color to different color scheme or the
+    display of the colorbar, colored label. you might don't need to display the labels showing
+    the values of each cell, and for all of these decisions there are a lot of customizable parameters.
 
 Basic Figure features
 ---------------------
-first for the size of the figure you have to pass a tuple with the width and height
+- First for the size of the figure you have to pass a tuple with the width and height.
 
 - Figsize : [tuple], optional
         figure size. The default is (8,8).
@@ -72,7 +74,7 @@ first for the size of the figure you have to pass a tuple with the width and hei
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Flow Accumulation map'}>)
 
-.. image:: /img/visualization/basic_feature.png
+.. image:: images/basic_feature.png
     :width: 400pt
 
 Color Bar
@@ -108,7 +110,7 @@ Color Bar
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/color_bar.png
+.. image:: images/color_bar.png
     :width: 400pt
 
 Color Schame
@@ -139,12 +141,12 @@ Color Schame
     # for normal linear scale
     ColorScale = 1
     cmap='terrain'
-    vis.PlotArray(src, ColorScale=ColorScale,cmap=cmap, TicksSpacing=TicksSpacing)
+    vis.PlotArray(src, ColorScale=ColorScale, cmap=cmap, TicksSpacing=TicksSpacing)
 
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/color_scheme.png
+.. image:: images/color_scheme.png
     :width: 400pt
 
 Power Scale
@@ -170,11 +172,11 @@ Power Scale
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/power_scale5.png
+.. image:: images/power_scale5.png
     :width: 400pt
-.. image:: /img/visualization/power_scale4.png
+.. image:: images/power_scale4.png
     :width: 400pt
-.. image:: /img/visualization/power_scale2.png
+.. image:: images/power_scale2.png
     :width: 400pt
 
 SymLogNorm scale
@@ -193,7 +195,7 @@ SymLogNorm scale
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/symlognorm.png
+.. image:: images/symlognorm.png
     :width: 400pt
 
 
@@ -210,7 +212,7 @@ PowerNorm scale
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/powernorm.png
+.. image:: images/powernorm.png
     :width: 400pt
 
 Color scale 5
@@ -228,7 +230,7 @@ Color scale 5
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/midpoint.png
+.. image:: images/midpoint.png
     :width: 400pt
 
 Cell value label
@@ -258,15 +260,15 @@ Cell value label
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/cellvalue.png
+.. image:: images/cellvalue.png
     :width: 400pt
 
 Plot Points
 -----------
 
 if you have points that you want to display in the map you can read it into a dataframe
-in condition that it has two columns "x", "y" which are the coordinates of the points of theand they have to be
-in the same coordinate system as the raster
+in condition that it has two columns "x", "y" which are the coordinates of the points of
+theand they have to be in the same coordinate system as the raster.
 
 - read the points
 
@@ -295,5 +297,5 @@ in the same coordinate system as the raster
     (<Figure size 576x576 with 2 Axes>,
     <AxesSubplot:title={'center':'Total Discharge'}>)
 
-.. image:: /img/visualization/plotpoints.png
+.. image:: images/plotpoints.png
     :width: 400pt
